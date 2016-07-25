@@ -29,7 +29,7 @@ if (SERVER) then
 		if (string.Trim(body) ~= version) then
 			MsgC( Color(255,0,0), "["..addon_name.." ("..version..")] You are NOT using the latest version! (version: "..string.Trim(body)..")\n" )
 		else
-			MsgC( Color(255,0,0), "["..addon_name.." ("..version..")] You are using the latest version!\n" )
+			MsgC( Color(0,255,0), "["..addon_name.." ("..version..")] You are using the latest version!\n" )
 		end
 	end )	
 	timer.Create(addon_id.."VersionCheckServerTimer", 600, 0, function()
